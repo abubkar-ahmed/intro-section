@@ -12,7 +12,10 @@ function Main() {
             setImgsScreen(true);
         }
     }
-    
+    React.useEffect(() => {
+        texting();
+    },[])
+
     React.useEffect(() => {
         window.addEventListener('resize', texting);
         return () => {
