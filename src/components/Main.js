@@ -5,7 +5,7 @@ function Main() {
     const[imgScreen, setImgsScreen] = React.useState(false);
 
 
-    function texting(){
+    function moblieOrDeskTop(){
         if(window.innerWidth <= 768){
             setImgsScreen(false);
         }else{
@@ -13,13 +13,13 @@ function Main() {
         }
     }
     React.useEffect(() => {
-        texting();
+        moblieOrDeskTop();
     },[])
 
     React.useEffect(() => {
-        window.addEventListener('resize', texting);
+        window.addEventListener('resize', moblieOrDeskTop);
         return () => {
-            window.removeEventListener('resize', texting);
+            window.removeEventListener('resize', moblieOrDeskTop);
         }
     });
   return (
