@@ -36,7 +36,7 @@ function Main() {
             </div>
         </section>
         <section className='sec-2'>
-            <img src={imgScreen ? './images/1.png' : './images/image-hero-mobile.png'} alt='hero'/>
+            <img src={imgScreen ? './images/image-hero-desktop.png' : './images/image-hero-mobile.png'} alt='hero'/>
         </section>
     </main>
   )
